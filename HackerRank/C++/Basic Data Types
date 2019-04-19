@@ -1,0 +1,19 @@
+#include <iostream>
+#include<math.h>
+#include<iomanip>
+
+using namespace std;
+
+int main() {
+    int a;
+    long b;
+    long long c;
+    char d;
+   float e;
+   double f;
+    cin>>a>>b>>c>>d>>e>>f;
+    cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"; 
+    std::cout<<std::fixed;
+    std::cout << std::setprecision(3) << fixed << e << '\n';
+    std::cout << std::setprecision(9) << fixed << f;
+}

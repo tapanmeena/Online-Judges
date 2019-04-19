@@ -1,0 +1,30 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main()
+{
+  int n,q,outerindex,temp;
+  cin>>n>>q;
+  vector< vector<int> >myVector; 
+  for(int i=0;i<n;i++)
+    {
+      vector<int> tempy;
+      cin>>outerindex;
+      for(int j=0;j<outerindex;j++)
+	{
+	  cin>>temp;
+	  //	  cout<<temp;
+	  tempy.push_back(temp);
+	}
+      myVector.push_back(tempy);
+    }
+  
+  int innerindex;
+  
+  for(int i=0;i<q;i++)
+    {
+      cin>>outerindex>>innerindex;
+      cout<<myVector[outerindex][innerindex]<<endl;      
+    }
+}

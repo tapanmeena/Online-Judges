@@ -1,0 +1,42 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <set>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n;
+    cin>>n;
+    set <int> s;
+    set<int>::iterator it;
+    for(int i=0;i<n;i++){
+        int temp;
+        cin>>temp;
+        if(temp==1){
+            int num;
+            cin>>num;
+            s.insert(num);
+        }
+        else if(temp==2){
+            int num;
+            cin>>num;
+            s.erase(num);
+        }
+        else{
+            int num;
+            cin>>num;
+            it=s.find(num);
+            if(it!=s.end())
+                cout<<"Yes"<<endl;
+            else 
+                cout<<"No"<<endl;
+        }
+    }
+    return 0;
+}
+
+
+

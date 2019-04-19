@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int max_of_four(int a, int b, int c, int d) 
+    {
+    int s;
+    if(a>b && a>c && a>d){
+        s=a;}
+else if(b>a && b>c && b>d)
+{s=b;}
+else if(c>a && c>b && c>d)
+{s=c;}
+    else if(d>a && d>b && d>c)
+    {s=d;}
+return s;    
+}
+
+int main() {
+    int a, b, c, d;
+    cin>>a>>b>>c>>d;
+    int ans = max_of_four(a, b, c, d);
+    cout<<ans;
+    return 0;
+}
+

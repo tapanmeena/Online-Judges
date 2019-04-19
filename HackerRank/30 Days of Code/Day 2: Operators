@@ -1,0 +1,18 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+double totalCost()
+{
+  double mealCost,tipPercent,taxPercent,tip,tax,totalCost;
+  cin>>mealCost>>tipPercent>>taxPercent;
+  tip=(mealCost*(tipPercent/100));
+  tax=(mealCost*(taxPercent/100));
+  totalCost=mealCost+tip+tax;
+  return round(totalCost);
+}
+
+int main()
+{
+  cout<<"The total meal cost is "<<totalCost()<<" dollars.";
+}

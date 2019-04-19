@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int factorial(int n,int total)
+{
+  if(n==0)
+    {
+      int c=1;
+    return c;
+    }
+  else
+    {
+      total=n*factorial(n-1,total);
+   }
+  return total;
+}
+
+int main()
+{
+  int n,total=0;
+  cin>>n;
+  cout<<factorial(n,total);
+}

@@ -1,0 +1,14 @@
+n=int(input())
+arr=list(map(int,input().split()))
+s=sorted(arr, reverse=True)
+c=s[1]
+for i in range(len(s)):
+    if s[i]==c:
+        if i!=(len(s)-1):
+            c=s[i+2]
+        else:
+            print (s[i])
+            break
+    else:
+        print (c)
+        break

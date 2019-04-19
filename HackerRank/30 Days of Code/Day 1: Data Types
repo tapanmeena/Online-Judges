@@ -1,0 +1,19 @@
+    
+    // Declare second integer, double, and String variables.
+    int second;
+    double dd;
+    string ss;
+    // Read and save an integer, double, and String to your variables.
+    cin>>second;
+    cin>>dd;
+    getline(cin >> ws, ss);
+// Note: If you have trouble reading the entire string, please go back and review the Tutorial closely.
+    
+    // Print the sum of both integer variables on a new line.
+    cout<<second+i<<endl;
+    // Print the sum of the double variables on a new line.
+    cout<<fixed<<setprecision(1)<<dd+d<<endl;
+    // Concatenate and print the String variables on a new line
+cout<<s<<ss;
+    // The 's' variable above should be printed first.
+    
