@@ -1,5 +1,5 @@
 # Problem Solution from Different Online Judges
--> CodeChef
+-> CodeChef \n
 -> HackerRank
 -> CodeForces
 -> UVa - Online Judge
